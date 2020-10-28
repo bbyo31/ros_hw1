@@ -1,0 +1,8 @@
+<launch>
+    <param name="/idd" type="int" value="1" />
+    <param name="/hig" type="double" value="1.63" />
+    <param name="/wei" type="double" value="56" />
+    <node name="input_pub" pkg="hw1" type="input_pub" />
+    <node name="process_sub" pkg="hw1" type="process_sub" />
+    <node name="output_sub" pkg="hw1" type="output_sub" output="screen" />
+</launch>
